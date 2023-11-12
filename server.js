@@ -5,7 +5,7 @@ const cors = require('cors')
 
 const app = express()
 port = process.env.PORT || 3400
-const MD_URL = 'mongodb+srv://aalan_29_4:Twoninefour_294@cluster0.gm0s9hy.mongodb.net/chats?retryWrites=true&w=majority'
+const MD_URL = 'mongodb+srv://aalan_29_4:Twoninefour_294@cluster0.9fmwto6.mongodb.net/chats?retryWrites=true&w=majority'
 
 app.use(cors())
 app.use((req,res,next)=>{
