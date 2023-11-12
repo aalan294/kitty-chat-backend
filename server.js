@@ -8,6 +8,10 @@ port = process.env.PORT || 3400
 const MD_URL = 'mongodb+srv://aalan_29_4:Twoninefour_294@cluster0.9fmwto6.mongodb.net/chats?retryWrites=true&w=majority'
 
 app.use(cors())
+app.use((err,req,res,next)=>{
+    err?res.status(400).send():res.status(200).send()
+    next()
+})
 app.use((req,res,next)=>{
     console.log(`${req.url} ${req.method}`)
     next()
